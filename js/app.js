@@ -5,16 +5,61 @@ const exp = /[A-Z]/g;
 const fuente = parrafo.match(exp);
  console.log(fuente); 
 
-//________//
+//____1____//
 
-const par = 'Las oraciones con hoy que te presentamos a continuación te ayudarán a entender cómo debes usar hoy en una frase. Se trata de ejemplos con hoy gramaticalmente correctos que fueron redactados por expertos. Para saber cómo usar hoy en una frase, lee los ejemplos que te sugerimos e intenta crear una oración.';
+const par = 'Es hoy';
 const expo = /(hoy)/g; 
 const fue = par.match(expo);
  console.log(fue);
 
-//________//
+//____2____//
 
-const ej = 'Las oraciones con mañana que te presentamos a continuación te ayudarán a entender cómo debes usar mañana en una frase. Se trata de ejemplos con mañana gramaticalmente correctos que fueron redactados por expertos. Para saber cómo usar mañana en una frase, lee los ejemplos que te sugerimos e intenta crear una oración.';
-const em = /(mañana)[0]/g;
+const ej = 'Es hoy';
+const em = /(hoy)[0]/g;
 const mp = ej.match(em);
  console.log(mp); 
+
+ //____3____// 
+
+const ja = 'Es hoy';
+const ed = /(^hoy)/g;
+const pa = ja.match(ed);
+ console.log(pa);
+
+ //____4____//
+
+const de = 'Es hoy';
+const ef = /(^ )/g;
+const po = de.match(ef);
+ console.log(po);
+
+ //____5____//
+
+const du = 'canciones';
+const fa = /([aeiou])/g;
+const pi = du.match(fa);
+ console.log(pi);
+
+ //____6____//
+
+const we = 'canciones';
+const qu = /(c[aeiou])/g;
+const me = we.match(qu);
+ console.log(me); 
+
+ //____7____//
+
+const tu = 'canciones';
+const rv = /(n[aeiou])/g;
+const kl = tu.match(rv);
+ console.log(kl); 
+
+ //____8____//
+
+const rt = 'canciones';
+const mn = /([u])/g;
+const or = rt.match(mn);
+ console.log(or); 
+
+  //____9____//
+
